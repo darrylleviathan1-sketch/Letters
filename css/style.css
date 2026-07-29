@@ -27,19 +27,33 @@
 
 
 body{
+
     margin:0;
-    height:100vh;
 
-    display:flex;
-    justify-content:center;
-    align-items:center;
+    min-height:100vh;
 
-    background:linear-gradient(135deg,#ff9a9e,#fad0c4);
+    font-family:Arial, sans-serif;
 
-    font-family:Arial,sans-serif;
+    background:linear-gradient(
+        135deg,
+        #ff9a9e,
+        #fad0c4,
+        #fad0c4,
+        #a1c4fd
+    );
+
+    background-size:400% 400%;
+
+    animation:warna 10s ease infinite;
+
 }
-
 .card{
+
+    background:rgba(255,255,255,0.85);
+
+    backdrop-filter:blur(10px);
+
+    border-radius:25px;
 
     width:320px;
 
@@ -379,4 +393,28 @@ p{
     
     transform: scale(1.1);
     
+}
+
+@keyframes warna{
+
+    0%{
+
+        background-position:0% 50%;
+
+    }
+
+
+    50%{
+
+        background-position:100% 50%;
+
+    }
+
+
+    100%{
+
+        background-position:0% 50%;
+
+    }
+
 }
