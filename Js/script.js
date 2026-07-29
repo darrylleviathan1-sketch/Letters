@@ -4,7 +4,7 @@ function bukaSurat() {
     
     document.getElementById("popup").style.display = "block";
     
-    document.getElementById("surat").innerHTML = "HALAMAN BARU";
+    alert("SCRIPT BARU TERBACA");
     
     document.getElementById("musik").play();
     
