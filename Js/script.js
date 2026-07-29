@@ -57,6 +57,15 @@ let teks = "I will always wish the best things to you, and i hope that we will a
 
 let index = 0;
 
+ function ketik(){
+
+    if(index < teks.length){
+
+        document.getElementById("surat").innerHTML += teks.charAt(index);
+
+        index++;
+
+        setTimeout(ketik,30);
 
     }
 
