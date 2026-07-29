@@ -1,115 +1,197 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
 
-<meta charset="UTF-8">
+    <meta charset="UTF-8">
 
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Buat ayanggg</title>
+    <title>Buat Ayanggg</title>
 
-<link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.css">
 
 </head>
 
+
 <body>
-    
+
+
+    <!-- OPENING PAGE -->
+
     <div id="opening">
-    
-    <h1> UH OH! IT SEEMS LIKE YOU GOT A PACKAGE! </h1>
-    
-    <div class="gift">
-        
-        🎁
-        
-    </div>
-    
-    <button onclick="mulaiWebsite()">
-    
-        Buka Hadiah
-        
-    </button>
-    
-</div>
 
-<div id="mainWebsite">
+        <h1>
+            UH OH! IT SEEMS LIKE YOU GOT A PACKAGE!
+        </h1>
 
-    <div class="card">
 
-        <h1>Hiii Bb🤍</h1>
+        <div class="gift">
+            🎁
+        </div>
 
-        <p>
-            I made this letter to congratulate you for completing your thesis defense!
-        </p>
 
-        <button onclick="bukaSurat()">
-            Open Sesame!
+        <button onclick="mulaiWebsite()">
+            Buka Hadiah
         </button>
 
-    </div>
-
-
-    <div class="slider">
-
-        <img id="foto" src="images/foto1.jpg">
 
     </div>
 
-</div>
-    
-    <div id="popup" class="popup">
-        
-        <p id="surat"></p>
-    
-        <div class="popup-content">
-    
-            <h2>GRATZZZZZ</h2>
-    
+
+
+    <!-- MAIN WEBSITE -->
+
+    <div id="mainWebsite">
+
+
+        <!-- GREETING CARD -->
+
+        <div class="card">
+
+
+            <h1>
+                Hiii Bb🤍
+            </h1>
+
+
             <p>
-    
-            Hallo Bb! 
-    
-            <br><br>
-    
-            Congratulations for completing you thesis babe!
-            Good job for always moving forward and never giving up even when you tired! 
-            <br><br>
-            I hope you will achieve all your dreams in the near future (with me of course)! 
-            <br><br>
-            I will support and walk with you 'till all of our dreams is achieved
-            
-            So don't give up and always move forward! 
-            Don't be afraid to fail because you will never be alone! 
-            Remember that i will always be by your side no matter what! 
-            <br><br>
-            
-            I'M SO SO SO SOOOOOO PROUD OF YOU BABY
-            
-            <br><br>
-    
-            LOVE YOU SO MUCH BB🤍🤍🤍
-    
+                I made this letter to congratulate you for completing your thesis defense!
             </p>
-    
-            <button onclick="tutupSurat()">
-    
-            Tutup
-    
+
+
+            <button onclick="bukaSurat()">
+                Open Sesame!
             </button>
-    
+
+
         </div>
-    
+
+
+
+        <!-- PHOTO SLIDER -->
+
+        <div class="slider">
+
+
+            <img 
+            id="foto" 
+            src="images/foto1.jpg"
+            alt="Foto kenangan">
+
+
+        </div>
+
+
     </div>
-    
-     <audio id="musik">
-    
+
+
+
+
+
+    <!-- LETTER POPUP -->
+
+
+    <div id="popup" class="popup">
+
+
+        <div class="popup-content">
+
+
+            <h2>
+                GRATZZZZZ
+            </h2>
+
+
+            <p id="surat">
+
+                Hallo Bb!
+
+
+                <br><br>
+
+
+                Congratulations for completing your thesis babe!
+
+                Good job for always moving forward and never giving up even when you tired!
+
+
+                <br><br>
+
+
+                I hope you will achieve all your dreams in the near future (with me of course)!
+
+
+                <br><br>
+
+
+                I will support and walk with you 'till all of our dreams is achieved.
+
+
+                <br><br>
+
+
+                So don't give up and always move forward!
+
+
+                Don't be afraid to fail because you will never be alone!
+
+
+                Remember that I will always be by your side no matter what!
+
+
+                <br><br>
+
+
+                I'M SO SO SO SOOOOOO PROUD OF YOU BABY
+
+
+                <br><br>
+
+
+                LOVE YOU SO MUCH BB🤍🤍🤍
+
+
+            </p>
+
+
+
+            <button onclick="tutupSurat()">
+
+                Tutup
+
+            </button>
+
+
+
+        </div>
+
+
+    </div>
+
+
+
+
+    <!-- MUSIC -->
+
+
+    <audio id="musik">
+
         <source src="musik/music.mp3" type="audio/mpeg">
-    
+
     </audio>
-    
+
+
+
+
+
+    <!-- JAVASCRIPT -->
+
+
     <script src="Js/script.js?v=6"></script>
-    
-    </body>
-    
-    </html>
+
+
+
+</body>
+
+</html>
