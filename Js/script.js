@@ -53,22 +53,6 @@ hati.innerHTML = emoji[
 }
 setInterval(buatHati,300);
 
- let teks = "I will always wish the best things to you, and i hope that we will always be together. We have faced everything that the world has given us, and we will surely win once again";
-
-let index = 0;
-
- function ketik(){
-
-    if(index < teks.length){
-
-        document.getElementById("surat").innerHTML += teks.charAt(index);
-
-        index++;
-
-        setTimeout(ketik,30);
-
-    }
-
 }
 
 let daftarFoto = [
