@@ -1,0 +1,187 @@
+function bukaSurat() {
+    
+    confetti();
+    
+    document.getElementById("popup").style.display = "block";
+    
+    document.getElementById("surat").innerHTML = "";
+    
+    index = 0;
+    
+    ketik();
+    
+    document.getElementById("musik").play();''
+    
+}
+
+function tutupSurat(){
+
+    document.getElementById("popup").style.display="none";
+
+    document.getElementById("musik").pause();
+
+}
+ function buatHati(){
+
+    let hati = document.createElement("div");
+
+    hati.innerHTML = "️🤍";
+
+    hati.className = "heart";
+
+    hati.style.left = Math.random()*100 + "vw";
+
+    hati.style.animationDuration = (Math.random()*3+2)+"s";
+    
+    hati.style.fontSize =
+(Math.random()*25+20)+"px";
+
+    document.body.appendChild(hati);
+
+    setTimeout(function(){
+
+        hati.remove();
+
+    },5000);
+    
+    let emoji = ["❤️","💖","💕","💘","🤍"];
+
+hati.innerHTML = emoji[
+    Math.floor(Math.random()*emoji.length)
+];
+
+}
+setInterval(buatHati,300);
+
+ let teks = "I will always wish the best things to you, and i hope that we will always be together. We have faced everything that the world has given us, and we will surely win once again";
+
+let index = 0;
+
+ function ketik(){
+
+    if(index < teks.length){
+
+        document.getElementById("surat").innerHTML += teks.charAt(index);
+
+        index++;
+
+        setTimeout(ketik,30);
+
+    }
+
+}
+
+let daftarFoto = [
+    
+    "images/foto1.jpg",
+    
+    "images/foto2.jpg",
+    
+    "images/foto3.jpg",
+    
+    "images/foto4.jpg"
+    
+];
+
+let sekarang = 0;
+
+function gantiFoto() {
+    
+    sekarang++;
+    
+    if (sekarang >= daftarFoto.length) {
+        
+        sekarang = 0;
+        
+    }
+    
+    document.getElementById("foto").src = daftarFoto[sekarang];
+    
+}
+
+setInterval(gantiFoto, 3000);
+
+function confetti() {
+    
+    let warna = ["🎉", "✨", "💖", "💗", "🌸"];
+    
+    for (let i = 0; i < 40; i++) {
+        
+        let c = document.createElement("div");
+        
+        c.className = "confetti";
+        
+        c.innerHTML =
+            
+            warna[Math.floor(Math.random() * warna.length)];
+        
+        c.style.left = Math.random() * 100 + "vw";
+        
+        c.style.animationDuration =
+            
+            (Math.random() * 3 + 2) + "s";
+        
+        document.body.appendChild(c);
+        
+        setTimeout(() => {
+            
+            c.remove();
+            
+        }, 5000);
+        
+    }
+    
+}
+function mulaiWebsite() {
+    
+    document.getElementById("opening").style.display = "none";
+    
+    document.getElementById("mainWebsite").style.display = "block";
+    
+    document.getElementById("musik").play();
+    
+    confetti();
+    
+}
+
+function buatBintang() {
+    
+    let star = document.createElement("div");
+    
+    star.className = "star";
+    
+    star.innerHTML = "✨";
+    
+    star.style.left = Math.random() * 100 + "vw";
+    
+    star.style.animationDuration = (Math.random() * 5 + 4) + "s";
+    
+    document.body.appendChild(star);
+    
+    setTimeout(() => {
+        
+        star.remove();
+        
+    }, 8000);
+    
+}
+
+setInterval(buatBintang, 300);
+
+function darkMode(){
+
+document.body.classList.toggle("dark");
+
+}
+
+function keAtas() {
+    
+    window.scrollTo({
+        
+        top: 0,
+        
+        behavior: "smooth"
+        
+    });
+    
+}
