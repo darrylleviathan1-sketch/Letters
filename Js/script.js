@@ -4,7 +4,7 @@ function bukaSurat() {
     
     document.getElementById("popup").style.display = "block";
     
-    document.getElementById("surat").innerHTML = "I will always wish the best things to you, and i hope that we will always be together. We have faced everything that the world has given us, and we will surely win once again";
+    document.getElementById("surat").innerHTML = "";
     
     document.getElementById("musik").play();
     
