@@ -49,7 +49,6 @@ hati.innerHTML = emoji[
 }
 setInterval(buatHati,300);
 
-}
 
 let daftarFoto = [
     
@@ -148,20 +147,3 @@ function buatBintang() {
 
 setInterval(buatBintang, 300);
 
-function darkMode(){
-
-document.body.classList.toggle("dark");
-
-}
-
-function keAtas() {
-    
-    window.scrollTo({
-        
-        top: 0,
-        
-        behavior: "smooth"
-        
-    });
-    
-}
