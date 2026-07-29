@@ -1,9 +1,13 @@
 function bukaSurat() {
-
+    
+    confetti();
+    
     document.getElementById("popup").style.display = "block";
-
-    document.getElementById("surat").innerHTML = "PESAN BARU BERHASIL";
-
+    
+    document.getElementById("surat").innerHTML = "";
+    
+    document.getElementById("musik").play();
+    
 }
 function tutupSurat(){
 
