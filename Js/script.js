@@ -8,7 +8,7 @@ function bukaSurat() {
     
     index = 0;
     
-    ketik();
+
     
     document.getElementById("musik").play();''
     
