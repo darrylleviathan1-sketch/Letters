@@ -370,31 +370,6 @@ footer {
     
 }
 
-.dark {
-    
-    background: #121212;
-    
-    color: white;
-    
-}
-
-#topBtn {
-    
-    position: fixed;
-    
-    bottom: 20px;
-    
-    right: 20px;
-    
-    border: none;
-    
-    padding: 15px;
-    
-    border-radius: 50%;
-    
-    cursor: pointer;
-    
-}
 
 button {
     
