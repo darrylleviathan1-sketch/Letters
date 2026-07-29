@@ -4,7 +4,7 @@ function bukaSurat() {
     
     document.getElementById("popup").style.display = "block";
     
-    document.getElementById("surat").innerHTML = "TEST";
+    document.getElementById("surat").innerHTML = "";
     
     document.getElementById("musik").play();
     
