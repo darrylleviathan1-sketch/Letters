@@ -4,12 +4,11 @@ function bukaSurat() {
     
     document.getElementById("popup").style.display = "block";
     
-    alert("SCRIPT BARU TERBACA");
+    document.getElementById("surat").innerHTML = "";
     
     document.getElementById("musik").play();
     
 }
-
 function tutupSurat(){
 
     document.getElementById("popup").style.display="none";
